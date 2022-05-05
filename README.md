@@ -20,8 +20,7 @@ Postman - IDE Eclipse - Linguagem JAVA com Framework Rest Assured + Junit - GIT
 
 ## Relatório da minha experiência:
 <p>Foi utilizado o Postman para realizar os cenários e obter os resultados. Exportei a collection em  arquivo Json . 
- Com relação ao CYPRESS, eu tinha mencionado na entrevista que ainda não tinha habilidades, tentei estudar e aplicar neste desafio mas estava perdendo bastante tempo.
- Resolvi tentar improvisar e utilizar um framework com um projeto MAVEN no JAVA + Rest Assured + Junit e mesmo assim não consegui obter acesso pois o token não funcionou, conforme o "response"
+ Com relação ao CYPRESS, eu tinha mencionado na entrevista que ainda não tinha habilidades, tentei estudar e já aplicar neste desafio mas como eu precisava entregar na data, optei por improvisar e utilizar um framework com um projeto MAVEN no JAVA + Rest Assured + Junit e por algum motivo o token não funcionou como no postman, conforme o "response":
 
 {
     "error": {
@@ -41,5 +40,4 @@ e para obter um access token no postman, eu tive que informar esses dados junto 
 - O token é gerado, porém ele expira a cada uma hora, então eu tinha que solicitar quando necessário.
 Ao realizar o teste no postamn (send) retorna o "response" com a mensagem "token expired" sendo assim, basta acessar "authorization - type OAUTH - clicar no botão Get new Token - Use Token.
 Eaí podemos realizar um novo teste e obter o response esperado com as informações.
-A experiência foi ótima, tive que pesquisar e estudar um pouco sobre os tokens de acesso do spotify para entender o funcionamento, apesar da dificuldade e o não sucesso utilizando o JAVA com restAssured
-foi de grande satisfação e aprendizado.   </p>
+A experiência foi ótima, tive que pesquisar e estudar um pouco sobre os tokens de acesso do spotify para entender o funcionamento, apesar da dificuldade em conseguir autenticação utilizando a alternativa em JAVA com restAssured foi de grande satisfação e aprendizado.   </p>
