@@ -29,7 +29,7 @@ public class Getatrack {
 	public void getaAlbum() {
 		RequestSpecification request = RestAssured.given() .auth().preemptive().oauth2("BQApsGl3nlhQZHRguc4tlGPtfLaMMAIkOtTototbLn7EgLE34sOD8K_h6UkQokZ9OFF0qdiMTaZDga6qVuZ17dxWY_kOQ5Fbj9I-__vAIwHtAcrGjof2eGN9Ns1Ff7ghKaIn5YRdcOv4jE4");
 
-		request.header("Authorization","Bearer "+"BQApsGl3nlhQZHRguc4tlGPtfLaMMAIkOtTototbLn7EgLE34sOD8K_h6UkQokZ9OFF0qdiMTaZDga6qVuZ17dxWY_kOQ5Fbj9I-__vAIwHtAcrGjof2eGN9Ns1Ff7ghKaIn5YRdcOv4jE4");
+		request.header("Authorization","Bearer ","Content-Type","aplication/json");
 		Response response = RestAssured.get("https://api.spotify.com/v1/albums/0JKlc3z8LMvYXvAvCv1EzG");
 		System.out.println(response.asPrettyString());
 		System.out.println("");
@@ -51,6 +51,7 @@ public class Getatrack {
 		System.out.println("status code " + response.getStatusCode() );
 		int code = response.getStatusCode();
 		assertEquals (200,code);
+		
 		
 	}
 	}
